@@ -19,7 +19,7 @@ except socket.gaierror:
     print ("there was an error resolving the host")
     sys.exit()
  
-# connecting to the server
+# connecting to the server on the given port
 s.connect((host_ip, port))
  
 print ("the socket has successfully connected to google")
