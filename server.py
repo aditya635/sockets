@@ -13,6 +13,9 @@ port = 12345
 # instead we have inputted an empty string
 # this makes the server listen to requests
 # coming from other computers on the network
+#agar 127 wala hota toh restriced ip pe bind hota sirf iss computer se le paate requests
+#0.0.0.0 types ya ' ' rakhne pe we bind it to private wali ipv4s in a sense and to 127.0.0.1(but that's for this computer only and to other ipv4 that this computer has for 
+# other networks) and toh same network pe kahi se bhi kisi bhi device se request maarlo
 s.bind(('', port))        
 print ("socket binded to %s" %(port))
  
