@@ -11,5 +11,6 @@ s.connect(('192.168.29.176', port))
  
 # receive data from the server and decoding to get the string.
 print (s.recv(1024).decode())
+s.send('Yes sir'.encode())
 # close the connection
 s.close()
